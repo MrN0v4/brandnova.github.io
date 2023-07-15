@@ -147,7 +147,7 @@ section span{
     text-decoration-color: #dba13b;
 }
 .pic2{
-    height: 40vh;
+    height: auto;
     width: 100%;
     background-position: center;
     background-size: cover;
