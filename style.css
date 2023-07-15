@@ -164,6 +164,26 @@ section span{
     color: whitesmoke;
     text-decoration-color: #dba13b;
 }
+.f-body{
+    justify-content: center;    
+    display: flex;
+    flex-direction: row;
+    
+}
+.l1{
+    display: flex;
+    flex-direction: row;
+}
+.f-list{
+    margin: 2% 3%;
+}
+.f-list i{
+    font-size: 40px;
+    color: #dba13b;
+}
+.f-list p{
+    color: whitesmoke;
+}
 /* .pic span::after {
     content: "";
     position: absolute;
@@ -230,6 +250,10 @@ footer ol li a:hover{
     }
     .list{
         display: block;
+    }
+    .l1{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (max-width: 834px) { 
@@ -303,6 +327,11 @@ footer ol li a:hover{
 }
 @media (max-width: 771px) { 
     
+}
+@media (max-width: 600px) { 
+    .f-body{
+        display: block;
+    }
 }
 @media (max-width: 500px){
     .p-info img{
