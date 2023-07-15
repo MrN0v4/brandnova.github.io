@@ -94,7 +94,7 @@ section{
     width: 100%;
     background-position: center;
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)), url(img/mark-basarab-1OtUkD_8svc-unsplash.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)), url(mark-basarab-1OtUkD_8svc-unsplash.jpg) no-repeat center / cover;
     background-attachment: fixed;
     display: flex;
     align-items:center;
@@ -151,7 +151,7 @@ section span{
     width: 100%;
     background-position: center;
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(img/pic2.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(pic2.jpg) no-repeat center / cover;
     background-attachment: fixed;
     width: 100%;
     padding: 10px 3% 50px 20%;
