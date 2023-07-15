@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+/* ========== Nav ========== */
+nav{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+
+}
+/* .logo{
+    color:rgb(0, 0, 0);
+    font-size: 35px;
+    line-height:80px;
+    padding: 0 100px;
+    font-weight: bold;
+} */
+.logo-img{
+    display: block;
+    width: 60px;
+    margin: 10px auto;
+}
+nav ul{
+    background: rgb(0, 0, 0);
+    float: left;
+    width: 18%;
+    height: 100vh;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 75px;
+}
+nav ul li a{
+    color: whitesmoke;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+nav ul li a:hover{
+    text-decoration: overline;
+    background: #dba13b;
+    color: black;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 3px 1px #000000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+#nav-x{
+    display: none;
+}
+hr{
+    border-top: 2px solid #dba13b;
+}
+
+/* ========== Content ========== */
+
+.content{
+    width: 100%;
+    padding: 80px 3% 50px 20%;
+    text-align: justify;
+}
+section{
+    width: 100%;
+
+}
+.pic{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)), url(img/mark-basarab-1OtUkD_8svc-unsplash.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* ========== About ========== */
+
+.p-info img{
+    display: inline;
+    height: 300px; 
+    width: 300px;
+    margin-right: 3%; 
+    margin-bottom: 3%; 
+    margin-top: 3%;
+}
+.p-head{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+}
+.p-list{
+    display: flex;
+    flex-direction: row;
+}
+.p-list-item ul li{
+    margin-bottom: 10px;
+}
+.p-list-item ul li i{
+    color: #dba13b;
+}
+section h1{
+    color: white;
+}
+section span{
+    text-decoration: underline;
+    text-decoration-color: #dba13b;
+}
+#ab-content{
+    background: #dddddd;
+    border-radius: 2%;
+}
+#about, #about span{
+    color: rgb(0, 0, 0);
+    text-decoration-color: #dba13b;
+}
+.pic2{
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(img/pic2.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 10px 3% 50px 20%;
+    /* display: flex;
+    align-items:center;
+    justify-content: center; */
+}
+#facts{
+    text-decoration: underline;
+    color: whitesmoke;
+    text-decoration-color: #dba13b;
+}
+/* .pic span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+  } */
+  
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+   
+}
+footer p{
+    display: inline;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+footer ol li{
+   display: inline;
+   padding: 0%;
+} 
+footer ol li a{
+    color: black;
+    padding: 10px 5px;
+}
+footer ol li a:hover{
+    color: #dba13b;
+    transition: .5s;
+}
+
+/* ========== Responsive Design (Max Width) ========== */
+
+@media (max-width: 1278px){
+    .p-list{
+        display: block;
+    }
+    .list{
+        /* display: inline; */
+    }
+}
+@media (max-width: 996px){
+    .logo{
+        font-size: 25px;
+        padding: 0 50px;
+    }
+    nav ul li a{
+        font-size:17px;
+        display: inline;
+        padding-right: 10px;
+
+    }
+    nav ul li{
+        height: 60px;
+    }
+    .list{
+        display: block;
+    }
+}
+@media (max-width: 834px) { 
+    .logo{
+        font-size: 35px;
+        padding: 0 50px;
+        left: 30%;
+    }  
+    .checkbtn{
+        display: block;
+    }
+    nav ul {
+        width: 70%;
+        padding-top: 80px;
+        position: fixed;
+        height: 100vh;
+        background: #000000;
+        top:0px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        height: 3%;
+    }
+    nav ul li a{
+        display: block;
+        padding: 7px 13px;
+        margin:50px 0;
+        line-height: 10px;
+        font-size: 20px;
+        color: whitesmoke;
+
+    }
+    a:hover{
+        background: #dba13b;
+        color: black;
+        transition: .5s;
+        border-radius: 3px;
+
+
+    }
+    .content{
+        width: 100%;
+        padding: 80px 3% 80px 3%;
+        text-align: justify;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #ab-content{
+        background: #dddddd;
+        border-radius: 2%;
+    }
+    .list{
+        display: block;
+    }
+    .p-list{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .p-list-item{
+        /* position: relative; */
+        margin-left: -50px;
+    }
+}
+@media (max-width: 771px) { 
+    
+}
+@media (max-width: 500px){
+    .p-info img{
+        height: 300px; 
+        width: 100%;
+    }
+}
+@media (max-width: 380px){
+    .logo{
+        font-size: 30px;
+    }
+
+}
+@media (max-width: 349px){
+    .logo{
+        font-size: 20px;
+    }
+    .p-list-item{
+        margin-left: -50px;
+        font-size: small;
+    }
+}
+
+/* ========== Responsive Design (Min Width) ========== */
+
+@media (max-width: 1278px){
+    .p-body{
+        display: inline;
+
+    }
+}
+@media (min-width: 835px){
+    nav ul li{
+        height: 10%;
+        
+    }
+    
+
+}
+
