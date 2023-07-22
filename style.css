@@ -212,6 +212,28 @@ section span{
 .progress{
     background: #333131;
 }
+.re-con{
+    width: 11%;
+    height: auto;
+    padding: 20px 10px 20px 10px;
+    background-color: #333131;
+    border-left: 5px solid #dba13b;
+    border-radius: 5px;
+}
+.re-tab{
+    height: 150px;
+    width: 200px;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: aliceblue;
+}
+.re-tab:hover{
+    
+    transition: 1s;
+}
 #ab-content, .sk-con p{
     border-left: 3px solid #dba13b;
 }
