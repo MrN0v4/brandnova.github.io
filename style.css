@@ -141,7 +141,7 @@ section span{
 }
 #ab-content{
     background: #dddddd;
-    border-radius: 3%;
+    border-radius: 20px;
 }
 #about, #about span{
     color: rgb(0, 0, 0);
@@ -188,7 +188,7 @@ section span{
 .sk-con p{
     background: #dddddd;
     padding: 3% 1%;
-    border-radius: 3%;
+    border-radius: 20px;
 }
 .bars{
     margin: 3%;
