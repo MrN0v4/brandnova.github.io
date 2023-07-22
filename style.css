@@ -99,9 +99,6 @@ section{
     align-items:center;
     justify-content: center;
 }
-#particles-js{
-    height: 100%;
-}
 /* ========== About ========== */
 
 .p-info img{
@@ -166,7 +163,6 @@ section span{
     justify-content: center;    
     display: flex;
     flex-direction: row;
-    
 }
 .l1{
     display: flex;
