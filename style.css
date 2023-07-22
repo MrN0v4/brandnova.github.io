@@ -87,7 +87,6 @@ hr{
 }
 section{
     width: 100%;
-
 }
 .pic{
     height: 100vh;
@@ -100,7 +99,9 @@ section{
     align-items:center;
     justify-content: center;
 }
-
+#particles-js{
+    height: 100%;
+}
 /* ========== About ========== */
 
 .p-info img{
@@ -140,7 +141,7 @@ section span{
 }
 #ab-content{
     background: #dddddd;
-    border-radius: 2%;
+    border-radius: 3%;
 }
 #about, #about span{
     color: rgb(0, 0, 0);
@@ -155,9 +156,6 @@ section span{
     background-attachment: fixed;
     width: 100%;
     padding: 10px 3% 50px 20%;
-    /* display: flex;
-    align-items:center;
-    justify-content: center; */
 }
 #facts{
     text-decoration: underline;
@@ -184,16 +182,27 @@ section span{
 .f-list p{
     color: whitesmoke;
 }
-/* .pic span::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #149ddd;
-    bottom: 0;
-    left: 0;
-  } */
+.sk-con{
+    height: auto;
+}
+.sk-con p{
+    background: #dddddd;
+    padding: 3% 1%;
+    border-radius: 3%;
+}
+.bars{
+    margin: 3%;
+}
+.b-bars{
+    width: 80%;
+}
+.progress-bar{
+    background: #dba13b;
+}
+.progress{
+    background: #333131;
+}
+
   
 
 
@@ -203,7 +212,6 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 0;
-   
 }
 footer p{
     display: inline;
@@ -230,9 +238,7 @@ footer ol li a:hover{
     .p-list{
         display: block;
     }
-    .list{
-        /* display: inline; */
-    }
+    
 }
 @media (max-width: 996px){
     .logo{
