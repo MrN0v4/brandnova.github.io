@@ -202,6 +202,9 @@ section span{
 .progress{
     background: #333131;
 }
+#ab-content, .sk-con p{
+    border-left: 3px solid #dba13b;
+}
 
   
 
