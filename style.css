@@ -443,12 +443,12 @@ section span{
 #show-btn i{
     font-size: 25px;
 }
-#show-btn small{
+#show-btn small, #show-btn2 small{
     font-size: 10px;
     width: 40px;
     margin: 3px;
 }
-#show-btn:hover{
+#show-btn:hover, #show-btn2:hover{
     opacity: 100%;
 }
 .pop-up{
@@ -555,7 +555,7 @@ footer ol li a:hover{
         overflow: scroll;
         background: linear-gradient(180deg, rgba(232,165,45,0) 90%, rgba(0, 0, 0, 0.26) 100%);
     }
-    #show-btn{
+    #show-btn, #show-btn2{
         display: block;
     }
 }
@@ -822,7 +822,7 @@ footer ol li a:hover{
         padding-left: 7px;
     }
     .progress{
-        height: 5px;
+        height: 10px;
         width: 100%;
         margin: 0;
     }
@@ -841,7 +841,7 @@ footer ol li a:hover{
         display: block;
     }
     .progress{
-        height: 5px;
+        height: 9px;
         width: 100%;
         margin: 0;
     }
@@ -856,7 +856,7 @@ footer ol li a:hover{
         width: 100%;
     }
     .progress{
-        height: 5px;
+        height: 9px;
         width: 100%;
         margin: 0;
     }
