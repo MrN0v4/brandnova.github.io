@@ -600,8 +600,11 @@ footer ol li a:hover{
         background-color: aliceblue;
     }
     .re-tab:hover{
-        
         transition: 1s;
+    }
+    .info-pop{
+    width: 900px;
+    height: 50%;
     }
 }
 @media (max-width: 834px) { 
@@ -674,6 +677,10 @@ footer ol li a:hover{
     .re-container{
         width: 100%;
         padding: 70px 3% 50px 3%;
+    }
+    .info-pop{
+    width: 700px;
+    height: 50%;
     }
 
 
