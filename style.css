@@ -745,6 +745,10 @@ footer ol li a:hover{
         height: 200px;
         overflow: hidden;
     }
+    .info-pop{
+    width: 700px;
+    height: 70%;
+    }
 }
 @media (max-width: 700px) { 
     .re-bottom .re-right h4{
@@ -836,7 +840,7 @@ footer ol li a:hover{
         overflow: hidden;
     }
     .info-pop{
-    width: 550px;
+    width: 500px;
     height: 70%;
     }
 }
@@ -853,6 +857,10 @@ footer ol li a:hover{
         font-size: 12px;
         padding: 0 15px;
     }
+    .info-pop{
+    width: 500px;
+    height: 50%;
+    }
 }
 @media (max-width: 500px){
     .p-info img{
@@ -863,6 +871,10 @@ footer ol li a:hover{
         height: 9px;
         width: 100%;
         margin: 0;
+    }
+    .info-pop{
+    width: 400px;
+    height: 50%;
     }
 }
 @media (max-width: 522px){
@@ -1009,7 +1021,7 @@ footer ol li a:hover{
         margin: 8px;
     }
     .info-pop{
-    width: 390px;
+    width: 380px;
     height: 50%;
     }
 }
@@ -1033,6 +1045,10 @@ footer ol li a:hover{
     .p-list-item{
         margin-left: -50px;
         font-size: small;
+    }
+    .info-pop{
+    width: 300px;
+    height: 50%;
     }
 }
 
