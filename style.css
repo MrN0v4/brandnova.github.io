@@ -1,17 +1,46 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
+
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(90, 89, 89);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(136, 135, 135);
+  }
+  
+
+
 body{
     width: 100%;
     height: 100vh;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+h2{
+    color: whitesmoke !important;
 }
 html{
     scroll-behavior: smooth;
+}
+
+#particles-js{
+    height: 100vh;
 }
 
 /* ========== Pre Loader ========== */
@@ -29,9 +58,13 @@ html{
 
 /* ========== Nav ========== */
 nav{
+    background: black;
     position: fixed;
-    height: 80px;
-    width: 100%;
+    float: left;
+    height: 100vh;
+    width: 18%;
+    padding: 30px 10px 30px 30px;
+    z-index: 999;
 }
 a{
     text-decoration: none;
@@ -52,19 +85,21 @@ h6{
     margin: 10px auto;
 }
 nav ul{
-    background: rgb(0, 0, 0);
+    background: rgb(22, 22, 22);
     float: left;
-    width: 18%;
-    height: 100vh;
-    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
     padding-right: 20px;
+    border: 1px solid #dfa94c;
+    border-radius: 10px;
 }
 nav ul li{
     display: inline-block;
     line-height: 75px;
 }
 nav ul li a{
-    color: whitesmoke;
+    color: darkgray;
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 13px;
@@ -72,13 +107,13 @@ nav ul li a{
 }
 nav ul li a:hover{
     text-decoration: overline;
-    background: #dba13b;
+    background: #dfa94c;
     color: black;
     transition: .5s;
 }
 .checkbtn{
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: darkgray;
     text-shadow: 0 3px 1px #000000;
     float: right;
     line-height: 80px;
@@ -93,14 +128,17 @@ nav ul li a:hover{
     display: none;
 }
 hr{
-    border-top: 2px solid #dba13b;
+    border-top: 2px solid #dfa94c;
 }
 
 /* ========== Content ========== */
 
+.b-left{
+    border-left: 3px solid #dfa94c;
+}
 .content{
     width: 100%;
-    padding: 80px 3% 50px 20%;
+    padding: 0 3% 0 20%;
     text-align: justify;
 }
 section{
@@ -111,11 +149,14 @@ section{
     width: 100%;
     background-position: center;
     background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)), url(img/mark-basarab-1OtUkD_8svc-unsplash.jpg) no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.082)), url(img/bg.jpg) no-repeat center / cover;
     background-attachment: fixed;
     display: flex;
     align-items:center;
     justify-content: center;
+}
+.pic h1{
+    position: absolute;
 }
 /* ========== About ========== */
 
@@ -133,11 +174,7 @@ section{
     flex-direction: row;
     margin-left: 10px;
 }
-.list{
-    display: flex;
-    flex-direction: row;
-}
-.p-list{
+.list, .p-list{
     display: flex;
     flex-direction: row;
 }
@@ -145,42 +182,45 @@ section{
     margin-bottom: 10px;
 }
 .p-list-item ul li i{
-    color: #dba13b;
+    color: #dfa94c;
 }
 section h1{
-    color: white;
+    color: whitesmoke;
 }
 section span{
     text-decoration: underline;
-    text-decoration-color: #dba13b;
+    text-decoration-color: #dfa94c;
 }
 #ab-content{
-    background: #dddddd;
-    border-radius: 20px;
+    background: #161616;
+    border-radius: 10px;
+    color: darkgray;
 }
 #about, #about span{
-    color: rgb(0, 0, 0);
-    text-decoration-color: #dba13b;
+    color: whitesmoke;
+    text-decoration-color: #dfa94c;
 }
+
+/* ========== Facts ========== */
+
+
 .pic2{
     height: auto;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(img/pic2.jpg) no-repeat center / cover;
-    background-attachment: fixed;
     width: 100%;
     padding: 10px 3% 50px 20%;
 }
 #facts{
     text-decoration: underline;
     color: whitesmoke;
-    text-decoration-color: #dba13b;
+    text-decoration-color: #dfa94c;
 }
 .f-body{
     justify-content: center;    
     display: flex;
     flex-direction: row;
+    background: #161616;
+    border-radius: 10px;
+
 }
 .l1{
     display: flex;
@@ -191,56 +231,102 @@ section span{
 }
 .f-list i{
     font-size: 40px;
-    color: #dba13b;
+    color: #dfa94c;
 }
 .f-list p{
-    color: whitesmoke;
+    color: darkgray;
 }
+
+/* ========== Skills ========== */
+
+
 .sk-con{
     height: auto;
 }
 .sk-con p{
-    background: #dddddd;
+    background: #161616;
+    color: darkgray;
     padding: 5% 3%;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+.sk-lst{
+    background: #161616;
+    color: darkgray;
+    border: 1px solid rgb(53, 52, 52);
+    border-radius: 10px;
+    justify-content: center;    
+    display: flex;
+    flex-direction: row;
+}
+.g-col-6{
+    list-style: none;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(53, 52, 52);
+}
+.g-col-6:hover{
+    height: 110px;
+    width: 160px;   
+    transition: .3s ease;
+    color: rgb(240, 240, 240);
+
+
+}
+.g-col-6 i{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 20px;
+    background: #dfa94c;
+    border-radius: 50%;
+}
+.g-col-6 i:hover{
+    color: rgb(240, 240, 240);
+    padding: 20px;
+    transition: .5s ease-in-out;
+}
+.g-col-6 span{
+    position: relative;
+    text-decoration: none;
+    color: darkgray;
+    top: 60px;
+}
+.res-btn{
+    padding: 5px;
+    background: #dfa94c;
+    color: #000000;
+    display: inline;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.res-btn a{
+    color: black;
+    font-weight: 500;
+}
+.res-btn:hover{
+    padding: 7px;
+    transition: .3s ease-in-out;
 }
 .bars{
     margin: 3%;
 }
+.bars h5{
+    color: whitesmoke;
+}
 .b-bars{
     width: 80%;
+    
 }
 .progress-bar{
-    background: #dba13b;
+    background: #dfa94c;
 }
 .progress{
     background: #333131;
 }
-.re-con{
-    width: 11%;
-    height: auto;
-    padding: 20px 10px 20px 10px;
-    background-color: #333131;
-    border-left: 5px solid #dba13b;
-    border-radius: 5px;
-}
-.re-tab{
-    height: 150px;
-    width: 200px;
-    margin-left: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    background-color: aliceblue;
-}
-.re-tab:hover{
-    
-    transition: 1s;
-}
-#ab-content, .sk-con p{
-    border-left: 3px solid #dba13b;
-}
+
+
 
   
 
@@ -266,7 +352,7 @@ section span{
 .re-top{
     width: 100%;
     height: 400px;
-    background: linear-gradient(45deg, #2c1d02, #dba13b);
+    background: linear-gradient(45deg, #2c1d02, #dfa94c);
     padding: 50px;
 }
 .re-top h2{
@@ -298,7 +384,7 @@ section span{
     width: 100%;
 }
 .re-group p{
-    color: whitesmoke;
+    color: darkgray;
     font-size: 18px;
 }
 .re-bottom{
@@ -310,12 +396,12 @@ section span{
     margin-top: 50px;
     width: 40%;
 }
-.re-bottom .re-left h4, .re-down h4, .info-pop h4{
+.re-bottom .re-left h4, .re-down h4{
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 7px;
     border-radius: 3px;
-    background: #dba13b;
+    background: #dfa94c;
     font-weight: 600;
     padding: 0 15px;
     margin-top: 40px;
@@ -335,7 +421,7 @@ section span{
     gap: 10px;
 }
 .re-contact li i{
-    color: #dba13b;
+    color: #dfa94c;
 }
 .re-contact li .text{
     color: #1a1919;
@@ -372,7 +458,7 @@ section span{
     text-transform: uppercase;
     letter-spacing: 7px;
     border-radius: 3px;
-    background: #dba13b;
+    background: #dfa94c;
     font-weight: 600;
     padding: 0 15px;
     margin-top: 20px;
@@ -426,69 +512,7 @@ section span{
     flex-direction: row;
     justify-content: center;
 }
-.expand{
 
-}
-#show-btn, #show-btn2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80px;
-    height: auto;
-    border: none;
-    border-radius: 5px;
-    opacity: 50%;
-    /* display: none; */
-}
-#show-btn i{
-    font-size: 25px;
-}
-#show-btn small, #show-btn2 small{
-    font-size: 10px;
-    width: 40px;
-    margin: 3px;
-}
-#show-btn:hover, #show-btn2:hover{
-    opacity: 100%;
-}
-.pop-up{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: #3331318c;
-    display: none;
-}
-.info-pop{
-    width: 40%;
-    height: 70%;
-    margin: auto auto;
-    border-radius: 9px;
-    padding: 10px;
-    overflow-y: scroll;
-    background: #ffffff;
-}
-.ex{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    color: rgb(255, 255, 255);
-}
-.ex p{
-    position: fixed;
-    margin: 5px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.596);
-}
 
 
 
@@ -521,11 +545,11 @@ footer ol li{
    padding: 0%;
 } 
 footer ol li a{
-    color: black;
+    color: darkgray;
     padding: 10px 5px;
 }
 footer ol li a:hover{
-    color: #dba13b;
+    color: #dfa94c;
     transition: .5s;
 }
 
@@ -536,27 +560,33 @@ footer ol li a:hover{
         display: block;
     }
     
+    
 }
 @media (max-width: 1037px){
+    nav ul li a{
+        /* font-size: 10px; */
+        padding: 3px 7px;
+        padding: 3px 7px;
+    }
+}
+@media (max-width: 1037px){
+    
     .re-con{
         width: 120px;
     }
     nav ul li a{
         font-size: 15px;
     }
-    .edu2{
+    .edu{
         height: 250px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         overflow: scroll;
         background: linear-gradient(180deg, rgba(232,165,45,0) 90%, rgba(0, 0, 0, 0.26) 100%);
     }
-    .wrk-exp2{
+    .wrk-exp{
         height: 250px;
         overflow: scroll;
         background: linear-gradient(180deg, rgba(232,165,45,0) 90%, rgba(0, 0, 0, 0.26) 100%);
-    }
-    #show-btn, #show-btn2{
-        display: block;
     }
 }
 @media (max-width: 996px){
@@ -600,14 +630,17 @@ footer ol li a:hover{
         background-color: aliceblue;
     }
     .re-tab:hover{
+        
         transition: 1s;
-    }
-    .info-pop{
-    width: 900px;
-    height: 50%;
     }
 }
 @media (max-width: 834px) { 
+    nav{
+        position: fixed;
+        height: 80px;
+        width: 100%;
+        background: transparent;
+    }
     .logo{
         font-size: 35px;
         padding: 0 50px;
@@ -638,11 +671,11 @@ footer ol li a:hover{
         margin:50px 0;
         line-height: 10px;
         font-size: 20px;
-        color: whitesmoke;
+        color: darkgray;
 
     }
     a:hover{
-        background: #dba13b;
+        background: #dfa94c;
         color: black;
         transition: .5s;
         border-radius: 3px;
@@ -651,15 +684,20 @@ footer ol li a:hover{
     }
     .content{
         width: 100%;
-        padding: 80px 3% 80px 3%;
+        padding: 0 3% 80px 3%;
         text-align: justify;
     }
     #check:checked ~ ul{
         left: 0;
     }
     #ab-content{
-        background: #dddddd;
+        background: #161616;
         border-radius: 2%;
+    }
+    .pic2{
+        height: auto;
+        width: 100%;
+        padding: 10px 3% 50px 3%;
     }
     .list{
         display: block;
@@ -677,10 +715,6 @@ footer ol li a:hover{
     .re-container{
         width: 100%;
         padding: 70px 3% 50px 3%;
-    }
-    .info-pop{
-    width: 700px;
-    height: 50%;
     }
 
 
@@ -730,7 +764,7 @@ footer ol li a:hover{
         width: 100%;
     }
     .re-group p{
-        color: whitesmoke;
+        color: darkgray;
         font-size: 15px;
     }
     .leftside{
@@ -751,10 +785,6 @@ footer ol li a:hover{
     .wrk-exp{
         height: 200px;
         overflow: hidden;
-    }
-    .info-pop{
-    width: 700px;
-    height: 70%;
     }
 }
 @media (max-width: 700px) { 
@@ -804,7 +834,7 @@ footer ol li a:hover{
         width: 100%;
     }
     .re-group p{
-        color: whitesmoke;
+        color: darkgray;
         font-size: 12px;
     }
     .leftside{
@@ -833,7 +863,7 @@ footer ol li a:hover{
         padding-left: 7px;
     }
     .progress{
-        height: 10px;
+        height: 5px;
         width: 100%;
         margin: 0;
     }
@@ -846,27 +876,19 @@ footer ol li a:hover{
         height: 180px;
         overflow: hidden;
     }
-    .info-pop{
-    width: 500px;
-    height: 70%;
-    }
 }
 @media (max-width: 600px) { 
     .f-body{
         display: block;
     }
     .progress{
-        height: 9px;
+        height: 5px;
         width: 100%;
         margin: 0;
     }
     .re-bottom .re-right h4, .re-bottom .re-left h4{
         font-size: 12px;
         padding: 0 15px;
-    }
-    .info-pop{
-    width: 500px;
-    height: 50%;
     }
 }
 @media (max-width: 500px){
@@ -875,13 +897,9 @@ footer ol li a:hover{
         width: 100%;
     }
     .progress{
-        height: 9px;
+        height: 5px;
         width: 100%;
         margin: 0;
-    }
-    .info-pop{
-    width: 400px;
-    height: 50%;
     }
 }
 @media (max-width: 522px){
@@ -967,7 +985,7 @@ footer ol li a:hover{
         font-size: 9px;
     }
     .re-contact li i{
-        color: #dba13b;
+        color: #dfa94c;
     }
     .re-contact li .text{
         color: #1a1919;
@@ -1027,10 +1045,6 @@ footer ol li a:hover{
         height: 80px;
         margin: 8px;
     }
-    .info-pop{
-    width: 380px;
-    height: 50%;
-    }
 }
 @media (max-width: 380px){
     .logo{
@@ -1053,10 +1067,6 @@ footer ol li a:hover{
         margin-left: -50px;
         font-size: small;
     }
-    .info-pop{
-    width: 300px;
-    height: 50%;
-    }
 }
 
 /* ========== Responsive Design (Min Width) ========== */
@@ -1068,11 +1078,22 @@ footer ol li a:hover{
     }
 }
 @media (min-width: 835px){
+    
+    
     nav ul li{
         height: 10%;
+        font-size: 10px;
+
         
     }
-    
+    /* nav ul li a{
+        font-size: 10px;
+        padding: 3px 7px;
+        margin:10px 0;
+
+    }
+     */
+     
 
 }
 
