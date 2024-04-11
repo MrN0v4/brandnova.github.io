@@ -596,7 +596,36 @@ section span{
 
 
 
+/* ========== Scroll To Top ========== */
+.stt{
+    position: fixed;
+    display: flex;
+    z-index: 111;
+    right: 20px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #dfa94c;
+    justify-content: center;
+    align-items: center;
+}
+.stt a{
+    background: transparent;
+}
+.stt a:hover{
+    background: transparent;
 
+}
+.stt a i{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.stt a i:hover{
+    font-size: 30px;
+    transition: .2s all;
+}
 
 
 
