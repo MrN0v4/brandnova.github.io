@@ -217,10 +217,10 @@
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 
             <ul id="portfolio-flters" class="port-filters d-flex justify-content-center p-3">
-                <li class="mx-2" data-filter="*"><button class="badge rounded-pill p-fil px-4 py-2">All</button></li>
-                <li class="mx-2" data-filter=".filter-app"><button class="badge rounded-pill p-fil px-4 py-2">App</button></li>
-                <li class="mx-2" data-filter=".filter-card"><button class="badge rounded-pill p-fil px-4 py-2">Card</button></li>
-                <li class="mx-2" data-filter=".filter-web"><button class="badge rounded-pill p-fil px-4 py-2">Web</button></li>
+                <li class="mx-2"><button id="all" class="badge rounded-pill p-fil px-4 py-2">All</button></li>
+                <li class="mx-2"><button id="app" class="badge rounded-pill p-fil px-4 py-2">App</button></li>
+                <li class="mx-2"><button id="card" class="badge rounded-pill p-fil px-4 py-2">Card</button></li>
+                <li class="mx-2"><button id="web" class="badge rounded-pill p-fil px-4 py-2">Web</button></li>
             </ul>
 
             <div class="row container">
@@ -404,11 +404,28 @@
         $("#nav-d").show();
       });
 
-    //   for the navigation to close up when a link is clicked on mobile view
-    //   $(".lnx").click(function(){
-    //     $(".nnnn").css();
-    //   });
-      
+         $("#all").click(function(){
+        $(".filter-app").fadeIn();
+        $(".filter-card").fadeIn();
+        $(".filter-web").fadeIn();
+      });
+      $("#app").click(function(){
+        $(".filter-card").fadeOut();
+        $(".filter-web").fadeOut();
+        $(".filter-app").fadeIn();
+      });
+      $("#card").click(function(){
+        $(".filter-app").fadeOut();
+        $(".filter-web").fadeOut();
+        $(".filter-card").fadeIn();
+      });
+      $("#web").click(function(){
+        $(".filter-app").fadeOut();
+        $(".filter-card").fadeOut();
+        $(".filter-web").fadeIn();
+      });
+
+        
     });
     
   </script>
