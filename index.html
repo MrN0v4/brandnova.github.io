@@ -406,26 +406,27 @@
         $("#nav-d").show();
       });
 
-         $("#all").click(function(){
+      $("#all").click(function(){
         $(".filter-app").fadeIn();
         $(".filter-card").fadeIn();
         $(".filter-web").fadeIn();
       });
       $("#app").click(function(){
-        $(".filter-card").fadeOut();
-        $(".filter-web").fadeOut();
+        $(".filter-card").hide();
+        $(".filter-web").hide();
         $(".filter-app").fadeIn();
       });
       $("#card").click(function(){
-        $(".filter-app").fadeOut();
-        $(".filter-web").fadeOut();
+        $(".filter-app").hide();
+        $(".filter-web").hide();
         $(".filter-card").fadeIn();
       });
       $("#web").click(function(){
-        $(".filter-app").fadeOut();
-        $(".filter-card").fadeOut();
+        $(".filter-app").hide();
+        $(".filter-card").hide();
         $(".filter-web").fadeIn();
       });
+
 
         
     });
